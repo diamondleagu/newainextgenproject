@@ -1,0 +1,180 @@
+/* Base Container */
+.baseContainer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #e6f7ff; /* Light blue background */
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff; /* Bright white header */
+    color: #2c3e50; /* Dark slate blue text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav a {
+    color: #2c3e50; /* Dark slate blue for navigation links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600; /* Semi-bold for a professional look */
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ffffff;
+    background-color: #f39c12; /* Gold background on hover */
+    box-shadow: 0 4px 8px rgba(243, 156, 18, 0.4); /* Subtle glow */
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 28px;
+    color: #2c3e50; /* Consistent dark slate blue */
+    font-weight: 700;
+  }
+  
+  /* Main Content Area */
+  .main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px; /* Added padding for breathing space */
+  }
+  
+  /* Content Container */
+  .contentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+  }
+  
+  /* Main Heading */
+  .mainHeading {
+    font-size: 48px; /* Refined size for a balanced look */
+    color: #2c3e50; /* Professional dark slate blue */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Slightly reduced spacing */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Softer shadow for subtle depth */
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #f39c12, #e74c3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  /* Left Content Area */
+  .leftContent {
+    width: 45%;
+    color: #2c3e50; /* Professional dark slate blue */
+    font-size: 20px;
+    line-height: 1.7; /* Improved readability */
+    font-weight: 500; /* Slightly lighter weight for a polished look */
+    letter-spacing: 1px; /* Refined letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right Image Area */
+  .rightImage {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rightImage img {
+    width: 100%;
+    max-width: 500px; /* Larger max-width for better impact */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  }
+  
+  /* Button */
+  .roundButton {
+    margin-top: 30px;
+    padding: 14px 28px; /* Slightly larger padding for emphasis */
+    background-color: #2c3e50; /* Dark slate blue button */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .roundButton:hover {
+    background-color: #34495e; /* Slightly darker slate blue */
+    transform: scale(1.05); /* Subtle hover effect */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px 20px;
+    }
+  
+    .nav {
+      gap: 15px;
+      flex-direction: column;
+    }
+  
+    .mainHeading {
+      font-size: 36px; /* Adjusted for smaller screens */
+      letter-spacing: 2px;
+    }
+  
+    .contentContainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .leftContent, .rightImage {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .rightImage img {
+      max-width: 100%;
+    }
+  
+    .roundButton {
+      width: 100%;
+      padding: 14px;
+    }
+  }
+  
